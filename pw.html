@@ -1,0 +1,198 @@
+<!DOCTYPE html> <!-- Dichiara il tipo di documento HTML5 -->
+<html lang="it"> <!-- Inizio del documento HTML, lingua impostata su italiano -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Imposta la codifica dei caratteri su UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ottimizza per dispositivi mobili -->
+  <title>Barilla Group - Sostenibilità</title> <!-- Titolo della pagina nella scheda del browser -->
+
+  <!-- Collegamento al foglio di stile CSS -->
+  <link rel="stylesheet" href="pw.css">
+
+  <!-- Libreria Chart.js per grafici -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Collegamento a Google Fonts (Savate) -->
+  <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome per le icone dei social -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Sfondo generale -->
+  <div class="background">
+
+    <!-- Intestazione principale -->
+    <div class="header">
+
+      <!-- Testo di presentazione del sito -->
+      <div class="header-text">
+        <p style="font-size: 200%;"><strong><em>BARILLA GROUP</em></strong></p> <!-- Titolo evidenziato -->
+        <p style="font-size: medium;">
+          Impegno per una produzione sostenibile.<br>
+          Di seguito potrai visualizzare la pagina e i vari report.
+        </p>
+      </div>
+
+      <!-- Barra superiore con social e selezione lingua -->
+      <div class="top-bar">
+        <div class="right">
+          <!-- Icone social -->
+          <i class="fab fa-linkedin fa-2x icon"></i>
+          <i class="fab fa-twitter fa-2x icon"></i>
+          <i class="fab fa-youtube fa-2x icon"></i>
+          <i class="fab fa-instagram fa-2x icon"></i>
+
+          <div class="divider"> | </div> <!-- Separatore visivo -->
+
+          <!-- Selettore della lingua -->
+          <label for="scelta">Lingua:</label>
+          <select id="scelta" name="scelta">
+            <option value="it">ITA</option>
+            <option value="en">ENG</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Immagine logo Barilla -->
+      <div class="header-image">
+        <img src="Logo_Barilla.png" alt="logo ufficiale Barilla">
+      </div>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="container">
+
+      <!-- Sezione grafico a barre -->
+      <div
+        style="display: flex; align-items: flex-start; gap: 30px; padding: 20px; width: 100%; max-width: 400px; height: 300px; flex: 1;">
+        <canvas id="sustainabilityChart" style="width: 100%; height: 100%;"></canvas>
+      </div>
+
+
+      <!-- Script del grafico Chart.js -->
+      <script>
+        const ctx = document.getElementById('sustainabilityChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Energia', 'Emissioni', 'Riciclo', 'Sicurezza', 'Qualità'],
+            datasets: [{
+              label: 'Indicatori di Sostenibilità',
+              data: [80, 65, 90, 85, 95],
+              backgroundColor: '#FF0000'
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#FFFFFF'
+                }
+              },
+              title: {
+                display: true,
+                text: 'Indicatori di Sostenibilità',
+                color: '#FFFFFF'
+              }
+            },
+            scales: {
+              x: {
+                ticks: {
+                  color: '#FFFFFF'
+                }
+              },
+              y: {
+                ticks: {
+                  color: '#FFFFFF'
+                }
+              }
+            }
+          }
+        });
+      </script>
+
+      <!-- Descrizione aziendale -->
+      <div class="description">
+        Barilla è un'azienda italiana a conduzione familiare, leader globale nel settore alimentare, specializzata nella
+        produzione di pasta, sughi pronti e prodotti da forno come biscotti, merendine, pane e grissini, oltre ad altri
+        alimenti a base di cereali.
+
+        Fondata a Parma nel 1877 da Pietro Barilla come una piccola bottega di pane e pasta, l’azienda è cresciuta nel
+        corso di oltre un secolo fino a diventare uno dei principali gruppi alimentari a livello mondiale. È ancora oggi
+        gestita dalla famiglia Barilla, giunta alla quarta generazione.
+
+        L'azienda vanta una presenza internazionale significativa, con oltre 30 stabilimenti produttivi nel mondo (circa
+        la metà in Italia) e una rete di distribuzione che copre più di 100 paesi.
+
+        Barilla si impegna da anni nella promozione di una nutrizione sana, accessibile e sostenibile, con una
+        particolare attenzione all’impatto ambientale e sociale delle proprie attività.
+
+        Investe costantemente in innovazione per migliorare la qualità dei propri prodotti e ridurre l’impatto
+        ambientale, attraverso centri di ricerca e sviluppo in Italia e all’estero, in collaborazione con università e
+        istituti scientifici.
+
+        Barilla è inoltre riconosciuta per il suo impegno verso la diversità e l'inclusione, la parità di genere e il
+        rispetto dei diritti umani lungo tutta la filiera produttiva.
+      </div>
+
+      <!-- Elenco punti di forza -->
+      <div class="points">
+        <ul>
+          <h5>
+            <p>I NOSTRI PUNTI DI FORZA:</p>
+          </h5>
+          <li>Innovazione responsabile</li>
+          <li>Sicurezza e qualità</li>
+          <li>Standard internazionali</li>
+          <li>Trasparenza operativa</li>
+          <li>Affidabilità garantita</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Titolo sezione download -->
+    <p class="custom-paragraph">POTRAI SCARICARE QUA SOTTO I REPORT</p>
+
+    <!-- Sottotesto motivazionale -->
+    <p style="text-align: center; text-transform: uppercase; margin: 20px; color: aliceblue;">
+      Questi report raccontano dei nostri prodotti, della nostra filiera e del nostro impegno verso l'ambiente e verso
+      la società.
+      Lavoriamo per far sì che i nostri prodotti rappresentino occasioni di gioia, condivisione e emozione.
+    </p>
+
+    <!-- Freccia animata -->
+    <div class="arrow">
+      <font color="white">&#8595</font> <!-- Freccia giù -->
+    </div>
+
+    <!-- Sezione download report -->
+    <div class="download-section">
+      <a href="report_2022_barilla.pdf" download>
+        <button class="download-button">
+          &#9851 Report 2022
+        </button>
+      </a>
+      <a href="report_2023_barilla.pdf" download>
+        <button class="download-button">
+          &#9851 Report 2023
+        </button>
+      </a>
+    </div>
+
+    <!-- Sezione legale con copyright -->
+    <footer class="legal-info">
+      <p>
+        © 2021 Barilla G. e R. Fratelli S.p.A - P.IVA 12345678901<br>
+        Sede legale: Via Mantova 166, 43122 Parma (PR), Italia<br>
+        Tel: +39 0521 2621 | Email: privacy-italy@barilla.com.
+      </p>
+    </footer>
+
+  </div> <!-- Fine background -->
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+/* Impostazioni generali del corpo della pagina */
+body {
+  margin: 0; /* Elimina i margini di default del browser */
+  font-family: 'Savate', sans-serif; /* Imposta il font principale della pagina */
+  background-color: #1a1a1a; /* Colore di sfondo scuro */
+  color: white; /* Colore del testo predefinito */
+}
+
+/* Contenitore dell'intestazione della pagina */
+.header {
+  background-color: #002b70; /* Colore blu per lo sfondo dell'header */
+  color: white; /* Colore del testo */
+  padding: 20px; /* Spaziatura interna */
+  display: flex; /* Imposta il layout flessibile */
+  justify-content: space-between; /* Spazia gli elementi all'interno */
+  align-items: center; /* Allinea verticalmente gli elementi al centro */
+  gap: 20px; /* Spazio tra gli elementi */
+}
+
+/* Sezione testuale dell'intestazione */
+.header-text {
+  flex: 1; /* Occupa lo spazio disponibile */
+  max-width: 70%; /* Imposta la larghezza massima al 70% del contenitore */
+  font-size: 1.5rem; /* Dimensione del testo */
+  font-family: 'Savate', cursive; /* Font alternativo in corsivo */
+}
+
+/* Immagine del logo all'interno dell'intestazione */
+.header-image img {
+  max-height: 150px; /* Altezza massima dell'immagine */
+  width: auto; /* Larghezza automatica proporzionale */
+  object-fit: contain; /* L'immagine si adatta senza deformarsi */
+}
+
+/* Contenitore generale centrale della pagina */
+.container {
+  display: flex; /* Layout flessibile */
+  flex-wrap: wrap; /* Permette il ritorno a capo degli elementi */
+  justify-content: center; /* Centra gli elementi orizzontalmente */
+  gap: 30px; /* Spazio tra gli elementi */
+  margin: 50px auto; /* Margini esterni sopra/sotto e centratura orizzontale */
+  padding: 20px; /* Spaziatura interna */
+  max-width: 1200px; /* Larghezza massima del contenitore */
+}
+
+/* Stile per immagini nella sezione container */
+.image {
+  width: 240px; /* Larghezza dell'immagine */
+  height: 240px; /* Altezza dell'immagine */
+}
+
+/* Blocco di descrizione testuale */
+.description {
+  padding: 20px; /* Spaziatura interna */
+  max-width: 500px; /* Larghezza massima del blocco */
+  text-align: center; /* Testo centrato */
+  color: #eefaf2; /* Colore del testo chiaro */
+}
+
+/* Lista dei punti di forza */
+.points {
+  max-width: 250px; /* Larghezza massima della sezione */
+  margin: 20px; /* Margine esterno */
+  font-family: cursive; /* Font in corsivo */
+}
+
+/* Titolo della lista */
+.points h5 {
+  color: red; /* Colore rosso per il titolo */
+  margin-bottom: 10px; /* Spazio sotto il titolo */
+}
+
+/* Lista non ordinata */
+.points ul {
+  padding-left: 20px; /* Rientro della lista */
+  color: white; /* Colore del testo */
+  text-align: left; /* Allineamento a sinistra */
+}
+
+/* Contenitore della sezione download */
+.download-section {
+  text-align: center; /* Allinea al centro */
+  margin: 40px auto; /* Spazio sopra e sotto, centrato */
+  padding: 0 20px; /* Spaziatura orizzontale */
+}
+
+/* Stile dei pulsanti di download */
+.download-button {
+  background-color: #e60000; /* Colore di sfondo rosso acceso */
+  color: white; /* Colore del testo */
+  padding: 10px 20px; /* Spaziatura interna */
+  border: none; /* Nessun bordo */
+  cursor: pointer; /* Puntatore a mano al passaggio */
+  border-radius: 8px; /* Angoli arrotondati */
+  font-size: 1rem; /* Dimensione del testo */
+  margin: 10px; /* Spaziatura esterna */
+  transition: background-color 0.3s ease; /* Animazione transizione sul colore di sfondo */
+}
+
+/* Effetto hover e focus sui pulsanti */
+.download-button:hover {
+  background-color: #cc0000; /* Colore rosso scuro al passaggio o focus */
+  outline: none; /* Nessun bordo di evidenziazione */
+}
+
+/* Paragrafo personalizzato evidenziato */
+.custom-paragraph {
+  text-align: center; /* Allineamento al centro */
+  color: #eefaf2; /* Colore chiaro */
+  font-size: 2.5rem; /* Grande dimensione del testo */
+  padding: 0 20px; /* Spaziatura orizzontale */
+  font-family: 'Savate', cursive; /* Font corsivo */
+}
+
+/* Freccia animata che indica il download */
+.arrow {
+  font-size: 4rem; /* Dimensione grande */
+  margin-bottom: 20px; /* Spazio sotto */
+  animation: bounce 1.5s infinite; /* Animazione rimbalzo continua */
+  text-align: center; /* Allineamento al centro */
+  color: white; /* Colore bianco */
+}
+
+/* Definizione dell'animazione bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Posizione iniziale e finale */
+  }
+  50% {
+    transform: translateY(-15px); /* Sposta verso l’alto a metà */
+  }
+}
+
+/* Sfondo sfumato per tutta la pagina */
+.background {
+  background: linear-gradient(to bottom, #0e4a7b, #6a0d83); /* Gradiente dall'alto blu al viola */
+}
+
+/* Barra in alto con social e lingua */
+.top-bar {
+  background-color: #002b70; /* Colore di sfondo */
+  display: flex; /* Layout flessibile */
+  flex-wrap: wrap; /* Permette ritorno a capo */
+  justify-content: space-between; /* Spazia gli elementi */
+  align-items: center; /* Allineamento verticale */
+  padding: 10px 30px; /* Spaziatura interna */
+  max-width: 1200px; /* Larghezza massima */
+  margin: 0 auto; /* Centratura */
+}
+
+/* Sezione a destra della top-bar (social + lingua) */
+.top-bar .right {
+  display: flex; /* Layout flessibile */
+  flex-wrap: wrap; /* Permette ritorno a capo */
+  align-items: center; /* Allineamento verticale */
+  gap: 15px; /* Spazio tra icone e select */
+}
+
+/* Menu a discesa per la lingua */
+select {
+  background-color: #002b70; /* Sfondo blu */
+  color: white; /* Colore testo */
+  border: 1px solid white; /* Bordo bianco */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 4px 8px; /* Spaziatura interna */
+}
+
+/* Sezione legale in fondo alla pagina */
+.legal-info {
+  background-color: #002b70; /* Colore sfondo */
+  padding: 30px; /* Spaziatura interna */
+  font-size: 0.875rem; /* Dimensione testo */
+  text-align: center; /* Testo centrato */
+  color: white; /* Colore testo */
+}
+
+/* Media query per adattamento mobile (max 768px) */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column; /* Layout verticale su dispositivi piccoli */
+    text-align: center; /* Allineamento centrale del testo */
+  }
+
+  .header-text {
+    max-width: 100%; /* Occupa tutto lo spazio disponibile */
+  }
+
+  .container {
+    flex-direction: column; /* Disposizione verticale degli elementi */
+    gap: 20px; /* Riduce lo spazio tra elementi */
+  }
+
+  .top-bar {
+    flex-direction: column; /* Disposizione verticale della top-bar */
+    align-items: flex-start; /* Allinea a sinistra */
+  }
+
+  .custom-paragraph {
+    font-size: 1.8rem; /* Riduce la dimensione del testo */
+  }
+
+  .arrow {
+    font-size: 2.5rem; /* Riduce la dimensione della freccia */
+  }
+
+  .header-image img {
+    height: 120px; /* Riduce l'altezza del logo */
+  }
+}
