@@ -1,9 +1,9 @@
 /* Impostazioni generali del corpo della pagina */
 body {
   margin: 0; /* Elimina i margini di default del browser */
-  font-family: 'Savate', sans-serif; /* Imposta il font principale della pagina */
-  background-color: #1a1a1a; /* Colore di sfondo scuro */
-  color: white; /* Colore del testo predefinito */
+  font-family: 'Montserrat', sans-serif; /* Imposta il font principale della pagina */
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Contenitore dell'intestazione della pagina */
@@ -23,6 +23,12 @@ body {
   max-width: 70%; /* Imposta la larghezza massima al 70% del contenitore */
   font-size: 1.5rem; /* Dimensione del testo */
   font-family: 'Savate', cursive; /* Font alternativo in corsivo */
+}
+
+canvas{
+ box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  border-radius: 12px;
+
 }
 
 /* Immagine del logo all'interno dell'intestazione */
@@ -57,25 +63,49 @@ body {
   color: #eefaf2; /* Colore del testo chiaro */
 }
 
-/* Lista dei punti di forza */
 .points {
-  max-width: 250px; /* Larghezza massima della sezione */
-  margin: 20px; /* Margine esterno */
-  font-family: cursive; /* Font in corsivo */
+  background-color:white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-/* Titolo della lista */
-.points h5 {
-  color: red; /* Colore rosso per il titolo */
-  margin-bottom: 10px; /* Spazio sotto il titolo */
+.points h2 {
+  text-align: center;
+  color: #004C99;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-/* Lista non ordinata */
 .points ul {
-  padding-left: 20px; /* Rientro della lista */
-  color: white; /* Colore del testo */
-  text-align: left; /* Allineamento a sinistra */
+  list-style: none;
+  padding: 0;
 }
+
+.points li {
+  font-size: 18px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.points li i {
+  color: #004C99;
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+.points li:hover {
+  transform: translateX(8px);
+  color: #004C99;
+}
+
 
 /* Contenitore della sezione download */
 .download-section {
@@ -86,21 +116,20 @@ body {
 
 /* Stile dei pulsanti di download */
 .download-button {
-  background-color: #e60000; /* Colore di sfondo rosso acceso */
-  color: white; /* Colore del testo */
-  padding: 10px 20px; /* Spaziatura interna */
-  border: none; /* Nessun bordo */
-  cursor: pointer; /* Puntatore a mano al passaggio */
-  border-radius: 8px; /* Angoli arrotondati */
-  font-size: 1rem; /* Dimensione del testo */
-  margin: 10px; /* Spaziatura esterna */
-  transition: background-color 0.3s ease; /* Animazione transizione sul colore di sfondo */
+   background-color: #004C99;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  cursor: pointer;
 }
 
 /* Effetto hover e focus sui pulsanti */
 .download-button:hover {
-  background-color: #cc0000; /* Colore rosso scuro al passaggio o focus */
-  outline: none; /* Nessun bordo di evidenziazione */
+  background-color: #0066cc;
 }
 
 /* Paragrafo personalizzato evidenziato */
@@ -175,7 +204,7 @@ select {
 }
 
 /* Media query per adattamento mobile (max 768px) */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column; /* Layout verticale su dispositivi piccoli */
     text-align: center; /* Allineamento centrale del testo */

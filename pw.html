@@ -12,11 +12,10 @@
   <!-- Libreria Chart.js per grafici -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- Collegamento a Google Fonts (Savate) -->
-  <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
+  <!-- Collegamento a Google Fonts (Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome per le icone dei social -->
+  <!-- Font Awesome per le icone dei social e elenco punti forza -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -67,7 +66,7 @@
 
       <!-- Sezione grafico a barre -->
       <div
-        style="display: flex; align-items: flex-start; gap: 30px; padding: 20px; width: 100%; max-width: 400px; height: 300px; flex: 1;">
+        style="display: flex; align-items: flex-start; gap: 30px; padding: 10px; width: 100%; max-width: 400px; height: 300px; flex: 1;">
         <canvas id="sustainabilityChart" style="width: 100%; height: 100%;"></canvas>
       </div>
 
@@ -82,7 +81,8 @@
             datasets: [{
               label: 'Indicatori di Sostenibilità',
               data: [80, 65, 90, 85, 95],
-              backgroundColor: '#FF0000'
+              backgroundColor: ['#004C99', '#0073e6', '#66b3ff', '#99ccff', '#cce5ff'],
+              borderRadius: 5,
             }]
           },
           options: {
@@ -123,7 +123,8 @@
 
         Fondata a Parma nel 1877 da Pietro Barilla come una piccola bottega di pane e pasta, l’azienda è cresciuta nel
         corso di oltre un secolo fino a diventare uno dei principali gruppi alimentari a livello mondiale. È ancora oggi
-        gestita dalla famiglia Barilla, giunta alla quarta generazione.
+        gestita dalla <a href="https://www.barillagroup.com/it/chi-siamo/storia/" style="color: white;">FAMIGLIA
+          BARILLA</a>, giunta alla quarta generazione.
 
         L'azienda vanta una presenza internazionale significativa, con oltre 30 stabilimenti produttivi nel mondo (circa
         la metà in Italia) e una rete di distribuzione che copre più di 100 paesi.
@@ -141,21 +142,21 @@
 
       <!-- Elenco punti di forza -->
       <div class="points">
+        <h2>I NOSTRI PUNTI DI FORZA</h2>
         <ul>
-          <h5>
-            <p>I NOSTRI PUNTI DI FORZA:</p>
-          </h5>
-          <li>Innovazione responsabile</li>
-          <li>Sicurezza e qualità</li>
-          <li>Standard internazionali</li>
-          <li>Trasparenza operativa</li>
-          <li>Affidabilità garantita</li>
+          <li><i class="fas fa-leaf"></i> Innovazione responsabile</li>
+          <li><i class="fas fa-shield-alt"></i> Sicurezza e qualità</li>
+          <li><i class="fas fa-globe"></i> Standard internazionali</li>
+          <li><i class="fas fa-search-dollar"></i> Trasparenza operativa</li>
+          <li><i class="fas fa-check-circle"></i> Affidabilità garantita</li>
         </ul>
       </div>
+
+
     </div>
 
     <!-- Titolo sezione download -->
-    <p class="custom-paragraph">POTRAI SCARICARE QUA SOTTO I REPORT</p>
+    <p class="custom-paragraph">REPORT ON DEMAND</p>
 
     <!-- Sottotesto motivazionale -->
     <p style="text-align: center; text-transform: uppercase; margin: 20px; color: aliceblue;">
@@ -173,12 +174,12 @@
     <div class="download-section">
       <a href="report_2022_barilla.pdf" download>
         <button class="download-button">
-          &#9851 Report 2022
+          &#9851 Report di Sostenibilità 2022
         </button>
       </a>
       <a href="report_2023_barilla.pdf" download>
         <button class="download-button">
-          &#9851 Report 2023
+          &#9851 Report di Sostenibilità 2023
         </button>
       </a>
     </div>
