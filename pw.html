@@ -39,12 +39,12 @@
       <div class="top-bar">
         <div class="right">
           <!-- Icone social -->
-          <i class="fab fa-linkedin fa-2x icon"></i>
-          <i class="fab fa-twitter fa-2x icon"></i>
-          <i class="fab fa-youtube fa-2x icon"></i>
-          <i class="fab fa-instagram fa-2x icon"></i>
+            <i class="fab fa-linkedin fa-2x icon"></i>
+            <i class="fab fa-twitter fa-2x icon"></i>
+            <i class="fab fa-youtube fa-2x icon"></i>
+            <i class="fab fa-instagram fa-2x icon"></i>
 
-          <div class="divider"> | </div> <!-- Separatore visivo -->
+          <div> | </div> <!-- Separatore visivo -->
 
           <!-- Selettore della lingua -->
           <label for="scelta">Lingua:</label>
@@ -71,17 +71,17 @@
       </div>
 
 
-      <!-- Script del grafico Chart.js -->
+      <!-- Script del grafico  -->
       <script>
         const ctx = document.getElementById('sustainabilityChart').getContext('2d');
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Energia', 'Emissioni', 'Riciclo', 'Sicurezza', 'Qualità'],
+            labels: ['Emissioni GHG (22)', 'Emissioni GHG (23)', 'Consumo idrico (22)', 'Consumo idrico (23)', 'Packaging riciclabile (22)', 'Packaging riciclabile (23)'],
             datasets: [{
-              label: 'Indicatori di Sostenibilità',
-              data: [80, 65, 90, 85, 95],
-              backgroundColor: ['#004C99', '#0073e6', '#66b3ff', '#99ccff', '#cce5ff'],
+              label: '22= 2022  23=2023',
+              data: [-32, -32, -24, -24, 99, 7, 99, 9],
+              backgroundColor: ['#004C99', '#0073e6', '#66b3ff', '#99ccff', '#cce5ff', '#FFFFFF'],
               borderRadius: 5,
             }]
           },
@@ -95,7 +95,7 @@
               },
               title: {
                 display: true,
-                text: 'Indicatori di Sostenibilità',
+                text: 'Indici di valutazione',
                 color: '#FFFFFF'
               }
             },
@@ -162,7 +162,7 @@
     <p style="text-align: center; text-transform: uppercase; margin: 20px; color: aliceblue;">
       Questi report raccontano dei nostri prodotti, della nostra filiera e del nostro impegno verso l'ambiente e verso
       la società.
-      Lavoriamo per far sì che i nostri prodotti rappresentino occasioni di gioia, condivisione e emozione.
+      Lavoriamo per far sì che i nostri prodotti rappresentino occasioni di gioia, condivisione ed emozione.
     </p>
 
     <!-- Freccia animata -->
@@ -185,13 +185,13 @@
     </div>
 
     <!-- Sezione legale con copyright -->
-    <footer class="legal-info">
+    <div class="legal-info">
       <p>
         © 2021 Barilla G. e R. Fratelli S.p.A - P.IVA 12345678901<br>
         Sede legale: Via Mantova 166, 43122 Parma (PR), Italia<br>
         Tel: +39 0521 2621 | Email: privacy-italy@barilla.com.
       </p>
-    </footer>
+    </div>
 
   </div> <!-- Fine background -->
 </body>

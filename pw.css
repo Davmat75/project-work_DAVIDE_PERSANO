@@ -1,238 +1,358 @@
 /* Impostazioni generali del corpo della pagina */
 body {
-  margin: 0; /* Elimina i margini di default del browser */
-  font-family: 'Montserrat', sans-serif; /* Imposta il font principale della pagina */
-  background-color: #f9f9f9;
-  color: #333;
+  margin: 0;
+  /* Elimina i margini di default del browser */
+  font-family: 'Montserrat', sans-serif;
+  /* Imposta il font principale della pagina */
 }
 
 /* Contenitore dell'intestazione della pagina */
 .header {
-  background-color: #002b70; /* Colore blu per lo sfondo dell'header */
-  color: white; /* Colore del testo */
-  padding: 20px; /* Spaziatura interna */
-  display: flex; /* Imposta il layout flessibile */
-  justify-content: space-between; /* Spazia gli elementi all'interno */
-  align-items: center; /* Allinea verticalmente gli elementi al centro */
-  gap: 20px; /* Spazio tra gli elementi */
+  background-color: #002b70;
+  /* Colore blu per lo sfondo dell'header */
+  color: white;
+  /* Colore del testo */
+  padding: 20px;
+  /* Spaziatura interna intorno al contenuto */
+  display: flex;
+  /* Imposta un layout flessibile orizzontale */
+  justify-content: space-between;
+  /* Spazia uniformemente gli elementi */
+  align-items: center;
+  /* Centra gli elementi verticalmente */
+  gap: 20px;
+  /* Distanza tra gli elementi */
 }
 
 /* Sezione testuale dell'intestazione */
 .header-text {
-  flex: 1; /* Occupa lo spazio disponibile */
-  max-width: 70%; /* Imposta la larghezza massima al 70% del contenitore */
-  font-size: 1.5rem; /* Dimensione del testo */
-  font-family: 'Savate', cursive; /* Font alternativo in corsivo */
+  flex: 1;
+  /* Occupa tutto lo spazio disponibile */
+  max-width: 70%;
+  /* Non supera il 70% della larghezza del contenitore */
+  font-size: 1.5rem;
+  /* Aumenta la dimensione del testo */
+  font-family: 'Savate', cursive;
+  /* Applica un font corsivo alternativo */
 }
 
-canvas{
- box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+/* Stile per elementi canvas (es. grafici) */
+canvas {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  /* Aggiunge ombra */
   border-radius: 12px;
-
+  /* Angoli arrotondati */
 }
 
 /* Immagine del logo all'interno dell'intestazione */
 .header-image img {
-  max-height: 150px; /* Altezza massima dell'immagine */
-  width: auto; /* Larghezza automatica proporzionale */
-  object-fit: contain; /* L'immagine si adatta senza deformarsi */
+  max-height: 150px;
+  /* Altezza massima dell'immagine */
+  width: auto;
+  /* Adatta la larghezza in proporzione */
+  object-fit: contain;
+  /* Contiene l’immagine senza deformarla */
 }
 
 /* Contenitore generale centrale della pagina */
 .container {
-  display: flex; /* Layout flessibile */
-  flex-wrap: wrap; /* Permette il ritorno a capo degli elementi */
-  justify-content: center; /* Centra gli elementi orizzontalmente */
-  gap: 30px; /* Spazio tra gli elementi */
-  margin: 50px auto; /* Margini esterni sopra/sotto e centratura orizzontale */
-  padding: 20px; /* Spaziatura interna */
-  max-width: 1200px; /* Larghezza massima del contenitore */
+  display: flex;
+  /* Layout flessibile orizzontale */
+  flex-wrap: wrap;
+  /* Permette il ritorno a capo degli elementi */
+  justify-content: center;
+  /* Centra gli elementi orizzontalmente */
+  gap: 30px;
+  /* Spazio tra gli elementi */
+  margin: 50px auto;
+  /* Margine sopra e sotto + centrato orizzontalmente */
+  padding: 20px;
+  /* Spaziatura interna */
+  max-width: 1200px;
+  /* Larghezza massima */
 }
 
 /* Stile per immagini nella sezione container */
 .image {
-  width: 240px; /* Larghezza dell'immagine */
-  height: 240px; /* Altezza dell'immagine */
+  width: 240px;
+  /* Larghezza fissa */
+  height: 240px;
+  /* Altezza fissa */
 }
 
 /* Blocco di descrizione testuale */
 .description {
-  padding: 20px; /* Spaziatura interna */
-  max-width: 500px; /* Larghezza massima del blocco */
-  text-align: center; /* Testo centrato */
-  color: #eefaf2; /* Colore del testo chiaro */
+  padding: 20px;
+  /* Spaziatura interna */
+  max-width: 500px;
+  /* Larghezza massima */
+  text-align: center;
+  /* Testo centrato */
+  color: #eefaf2;
+  /* Colore testo chiaro */
 }
 
+/* Contenitore con elenco di punti */
 .points {
-  background-color:white;
+  background-color: white;
+  /* Sfondo bianco */
   padding: 30px;
+  /* Spaziatura interna */
   border-radius: 20px;
+  /* Angoli arrotondati */
   max-width: 600px;
+  /* Larghezza massima */
   margin: 40px auto;
+  /* Spaziatura sopra e sotto + centrato */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Ombra leggera */
   text-align: left;
+  /* Allinea il testo a sinistra */
 }
 
+/* Titolo della sezione punti */
 .points h2 {
   text-align: center;
+  /* Titolo centrato */
   color: #004C99;
+  /* Colore blu */
   font-size: 28px;
+  /* Dimensione grande */
   margin-bottom: 20px;
+  /* Spazio sotto al titolo */
   font-weight: 700;
+  /* Grassetto */
 }
 
+/* Lista non ordinata */
 .points ul {
   list-style: none;
+  /* Rimuove i pallini della lista */
   padding: 0;
+  /* Rimuove padding interno */
 }
 
+/* Singolo elemento della lista */
 .points li {
   font-size: 18px;
+  /* Dimensione del testo */
   margin: 12px 0;
+  /* Spazio sopra e sotto */
   display: flex;
+  /* Layout flessibile orizzontale */
   align-items: center;
+  /* Allinea verticalmente con le icone */
   color: #333;
+  /* Colore del testo scuro */
   transition: transform 0.2s ease;
+  /* Transizione fluida al passaggio del mouse */
 }
 
+/* Icone all’interno degli elementi lista */
 .points li i {
   color: #004C99;
+  /* Colore blu per le icone */
   margin-right: 12px;
+  /* Spazio a destra */
   font-size: 22px;
+  /* Dimensione più grande */
 }
 
+/* Effetto hover sugli elementi lista */
 .points li:hover {
   transform: translateX(8px);
+  /* Sposta leggermente verso destra */
   color: #004C99;
+  /* Cambia il colore del testo */
 }
-
 
 /* Contenitore della sezione download */
 .download-section {
-  text-align: center; /* Allinea al centro */
-  margin: 40px auto; /* Spazio sopra e sotto, centrato */
-  padding: 0 20px; /* Spaziatura orizzontale */
+  text-align: center;
+  /* Allinea tutto al centro */
+  margin: 40px auto;
+  /* Spaziatura sopra/sotto e centratura */
+  padding: 0 20px;
+  /* Padding orizzontale */
 }
 
-/* Stile dei pulsanti di download */
+/* Pulsanti di download */
 .download-button {
-   background-color: #004C99;
+  background-color: #004C99;
+  /* Colore di sfondo blu */
   color: white;
+  /* Testo bianco */
   border: none;
+  /* Nessun bordo */
   padding: 14px 28px;
+  /* Spaziatura interna */
   margin: 10px;
+  /* Spaziatura attorno */
   border-radius: 30px;
+  /* Angoli molto arrotondati */
   font-size: 16px;
+  /* Dimensione del testo */
   transition: background 0.3s ease;
+  /* Transizione sul colore di sfondo */
   cursor: pointer;
+  /* Mostra il cursore a mano */
 }
 
-/* Effetto hover e focus sui pulsanti */
+/* Effetto hover sul pulsante */
 .download-button:hover {
   background-color: #0066cc;
+  /* Cambia colore al passaggio del mouse */
 }
 
-/* Paragrafo personalizzato evidenziato */
+/* Paragrafo evidenziato */
 .custom-paragraph {
-  text-align: center; /* Allineamento al centro */
-  color: #eefaf2; /* Colore chiaro */
-  font-size: 2.5rem; /* Grande dimensione del testo */
-  padding: 0 20px; /* Spaziatura orizzontale */
-  font-family: 'Savate', cursive; /* Font corsivo */
+  text-align: center;
+  /* Testo centrato */
+  color: #eefaf2;
+  /* Colore chiaro */
+  font-size: 2.5rem;
+  /* Testo molto grande */
+  padding: 0 20px;
+  /* Spaziatura orizzontale */
+  font-family: 'Savate', cursive;
+  /* Font decorativo */
 }
 
-/* Freccia animata che indica il download */
+/* Freccia animata (es. per download) */
 .arrow {
-  font-size: 4rem; /* Dimensione grande */
-  margin-bottom: 20px; /* Spazio sotto */
-  animation: bounce 1.5s infinite; /* Animazione rimbalzo continua */
-  text-align: center; /* Allineamento al centro */
-  color: white; /* Colore bianco */
+  font-size: 4rem;
+  /* Dimensione molto grande */
+  margin-bottom: 20px;
+  /* Spazio sotto la freccia */
+  animation: bounce 1.5s infinite;
+  /* Animazione continua di rimbalzo */
+  text-align: center;
+  /* Allineata al centro */
+  color: white;
+  /* Colore bianco */
 }
 
-/* Definizione dell'animazione bounce */
+/* Definizione animazione bounce */
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); /* Posizione iniziale e finale */
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Posizione iniziale e finale */
   }
+
   50% {
-    transform: translateY(-15px); /* Sposta verso l’alto a metà */
+    transform: translateY(-15px);
+    /* Al centro dell’animazione, la freccia sale */
   }
 }
 
-/* Sfondo sfumato per tutta la pagina */
+/* Sfondo sfumato per la pagina */
 .background {
-  background: linear-gradient(to bottom, #0e4a7b, #6a0d83); /* Gradiente dall'alto blu al viola */
+  background: linear-gradient(to bottom, #0e4a7b, #6a0d83);
+  /* Gradiente blu → viola */
 }
 
-/* Barra in alto con social e lingua */
+/* Barra superiore (es. social e selezione lingua) */
 .top-bar {
-  background-color: #002b70; /* Colore di sfondo */
-  display: flex; /* Layout flessibile */
-  flex-wrap: wrap; /* Permette ritorno a capo */
-  justify-content: space-between; /* Spazia gli elementi */
-  align-items: center; /* Allineamento verticale */
-  padding: 10px 30px; /* Spaziatura interna */
-  max-width: 1200px; /* Larghezza massima */
-  margin: 0 auto; /* Centratura */
+  background-color: #002b70;
+  /* Sfondo blu scuro */
+  display: flex;
+  /* Layout flessibile */
+  flex-wrap: wrap;
+  /* Va a capo su schermi piccoli */
+  justify-content: space-between;
+  /* Spaziatura orizzontale */
+  align-items: center;
+  /* Allineamento verticale */
+  padding: 10px 30px;
+  /* Spaziatura interna */
+  max-width: 1200px;
+  /* Larghezza massima */
+  margin: 0 auto;
+  /* Centratura orizzontale */
 }
 
-/* Sezione a destra della top-bar (social + lingua) */
+/* Parte destra della top-bar */
 .top-bar .right {
-  display: flex; /* Layout flessibile */
-  flex-wrap: wrap; /* Permette ritorno a capo */
-  align-items: center; /* Allineamento verticale */
-  gap: 15px; /* Spazio tra icone e select */
+  display: flex;
+  /* Layout flessibile */
+  flex-wrap: wrap;
+  /* Va a capo su schermi piccoli */
+  align-items: center;
+  /* Allineamento centrale */
+  gap: 15px;
+  /* Spazio tra icone e select */
 }
 
-/* Menu a discesa per la lingua */
+/* Stile del menu a tendina (lingua) */
 select {
-  background-color: #002b70; /* Sfondo blu */
-  color: white; /* Colore testo */
-  border: 1px solid white; /* Bordo bianco */
-  border-radius: 4px; /* Angoli arrotondati */
-  padding: 4px 8px; /* Spaziatura interna */
+  background-color: #002b70;
+  /* Sfondo blu */
+  color: white;
+  /* Testo bianco */
+  border: 1px solid white;
+  /* Bordo visibile bianco */
+  border-radius: 4px;
+  /* Angoli leggermente arrotondati */
+  padding: 4px 8px;
+  /* Spaziatura interna */
 }
 
 /* Sezione legale in fondo alla pagina */
 .legal-info {
-  background-color: #002b70; /* Colore sfondo */
-  padding: 30px; /* Spaziatura interna */
-  font-size: 0.875rem; /* Dimensione testo */
-  text-align: center; /* Testo centrato */
-  color: white; /* Colore testo */
+  background-color: #002b70;
+  /* Sfondo blu scuro */
+  padding: 30px;
+  /* Spaziatura interna */
+  font-size: 0.875rem;
+  /* Testo più piccolo */
+  text-align: center;
+  /* Testo centrato */
+  color: white;
+  /* Testo bianco */
 }
 
-/* Media query per adattamento mobile (max 768px) */
+/* Media query per dispositivi con larghezza massima di 768px (tablet e smartphone) */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Layout verticale su dispositivi piccoli */
-    text-align: center; /* Allineamento centrale del testo */
+    flex-direction: column;
+    /* Cambia layout da orizzontale a verticale */
+    text-align: center;
+    /* Centra il testo */
   }
 
   .header-text {
-    max-width: 100%; /* Occupa tutto lo spazio disponibile */
+    max-width: 100%;
+    /* Occupa tutta la larghezza disponibile */
   }
 
   .container {
-    flex-direction: column; /* Disposizione verticale degli elementi */
-    gap: 20px; /* Riduce lo spazio tra elementi */
+    flex-direction: column;
+    /* Gli elementi si dispongono verticalmente */
+    gap: 20px;
+    /* Riduce lo spazio tra elementi */
   }
 
   .top-bar {
-    flex-direction: column; /* Disposizione verticale della top-bar */
-    align-items: flex-start; /* Allinea a sinistra */
+    flex-direction: column;
+    /* Disposizione verticale */
+    align-items: flex-start;
+    /* Allineamento a sinistra */
   }
 
   .custom-paragraph {
-    font-size: 1.8rem; /* Riduce la dimensione del testo */
+    font-size: 1.8rem;
+    /* Riduce dimensione del testo */
   }
 
   .arrow {
-    font-size: 2.5rem; /* Riduce la dimensione della freccia */
+    font-size: 2.5rem;
+    /* Riduce dimensione della freccia */
   }
 
   .header-image img {
-    height: 120px; /* Riduce l'altezza del logo */
+    height: 120px;
+    /* Riduce l’altezza del logo */
   }
 }
